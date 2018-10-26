@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="205dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/pupuyuanjiao">
+    <!--第一层-->
+    <LinearLayout
+        android:id="@+id/diyiceng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/tu1"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/qiuku1"
+            app:riv_corner_radius_top_left="8dip"
+            app:riv_corner_radius_top_right="8dip" />
+    </LinearLayout>
+    <!--第二层-->
+    <LinearLayout
+        android:id="@+id/diercheng"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diyiceng">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tianmao"
+            android:padding="4dp"
+            android:text="天猫"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="名称"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!--第三层-->
+    <LinearLayout
+        android:id="@+id/disanceng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diercheng"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/youhui1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/youhui"
+            android:padding="3dp"
+            android:text="优惠什么的"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+    <!--第四层-->
+    <RelativeLayout
+        android:id="@+id/disicheng"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_below="@id/disanceng"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/biankuang"
+            android:padding="3dp"
+            android:text="天猫无忧购"
+            android:textColor="#ff0000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/tm"
+            android:background="@drawable/biankuang"
+            android:padding="3dp"
+            android:text="天猫包邮"
+            android:textColor="#ff0000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/tm1"
+            android:background="@drawable/biankuang"
+            android:padding="3dp"
+            android:paddingTop="2dp"
+            android:text="天猫包邮"
+            android:textColor="#ff0000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/baoyou1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/tm2"
+            android:background="@drawable/baoyou"
+            android:padding="3dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="包邮"
+            android:textColor="#ff8c34"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/dd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2.5dp"
+            android:paddingRight="10dp"
+            android:text="地点"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diwuceng"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/disicheng">
+
+        <TextView
+            android:id="@+id/jg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:text="价格"
+            android:textColor="#FF0033"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/jg1"
+            android:text="人数"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

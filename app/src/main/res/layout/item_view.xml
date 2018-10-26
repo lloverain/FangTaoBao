@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/tu"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/qiuku1"
+        app:riv_corner_radius="8dip" />
+
+    <LinearLayout
+        android:id="@+id/youbianzhenggebuju"
+        android:layout_width="230dp"
+        android:layout_height="155dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+
+        //上
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="名称"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        //中//////////////////////////////////////////////////////////////
+
+        <RelativeLayout
+            android:id="@+id/xiabianbuju"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="-10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/youhui"
+                android:padding="3dp"
+                android:text="优惠什么的"
+                android:textSize="10sp" />
+            ////////////////////////////////////////////////
+
+            <RelativeLayout
+                android:id="@+id/tsz"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_below="@id/youhui"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tiammao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/biankuang"
+                    android:padding="3dp"
+                    android:text="天猫无忧购"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tiammao1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/tiammao"
+                    android:background="@drawable/biankuang"
+                    android:padding="3dp"
+                    android:text="天猫包邮"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tiammao2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/tiammao1"
+                    android:background="@drawable/biankuang"
+                    android:padding="3dp"
+                    android:paddingTop="2dp"
+                    android:text="天猫包邮"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/baoyou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/tiammao2"
+                    android:background="@drawable/baoyou"
+                    android:padding="3dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="包邮"
+                    android:textColor="#ff8c34"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            //xia xia
+
+            <RelativeLayout
+                android:id="@+id/jrd"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/tsz"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/jg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="价格"
+                    android:textColor="#FF0033"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/jg"
+                    android:text="人数"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/dd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/rs"
+                    android:text="地点"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            //下
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jrd">
+
+                <TextView
+                    android:id="@+id/djm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="店家名" />
+
+                <TextView
+                    android:id="@+id/jd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/djm"
+                    android:text="进店>" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

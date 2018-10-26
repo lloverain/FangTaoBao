@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/xiaoxiliebiaotouxiang"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#fff1"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/xiaoxiliebiaodianming"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="店名"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:text="时间"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/endxiaoxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最后一条消息聊天消息"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

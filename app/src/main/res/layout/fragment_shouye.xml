@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".shouye">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--第一层-->
+        <LinearLayout
+            android:id="@+id/shouyediyiceng"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ff8f8f"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/shouyesaoyisao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/saoyisao" />
+
+            <EditText
+                android:id="@+id/shouyesousuo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:paddingLeft="23dp"
+                android:background="@drawable/sousuoyangshi" />
+
+            <ImageView
+                android:id="@+id/shouyehuiyuanma"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/huiyuanma" />
+        </LinearLayout>
+<!--第二层：轮播图-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/lunbo">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="这是轮播图"
+                android:textSize="50sp" />
+        </LinearLayout>
+<!--第三层：我的频道-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的频道"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="全部频道＞"
+                    android:textColor="#201f1f"
+                    android:background="@drawable/heisebiankuang"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <!--第三层的第一排-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                >
+                <!--11-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                    />
+                </LinearLayout>
+<!--12-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                  >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+<!--13-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+                <!--14-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+                <!--15-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--第三层第二排-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                >
+                <!--21-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <!--12-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <!--23-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+                <!--24-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+                <!--25-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="600dip"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/dashi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天猫"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--第三层-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:padding="10dp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                app:riv_corner_radius="20dip"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/guanggaowei"
+                android:layout_alignParentLeft="true"
+               />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                app:riv_corner_radius="20dip"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/guanggaowei"
+                android:layout_alignParentRight="true"
+              />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
